@@ -11,6 +11,10 @@ package emailapp;
 public class EmailApp {
     public static void main(String[] args) {
         Email email = new Email("Jane", "Doe");
+        email.setMailboxCapacity(5000);
+        email.setAlternateEmail("janedoe@gmail.com");
+        email.changePassword("*IKlm58!");
 
+        System.out.println(email.showInfo());
     }
 }
